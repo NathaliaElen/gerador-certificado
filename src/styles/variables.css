@@ -2,7 +2,7 @@
   /* Blue */
   --blue-base: #3B5AC2;
   --blue-dark: #1A2856;
-  --blue-gradient: linear-gradient(90deg, #1A2856 0%, #334EA9 100%)
+  --blue-gradient: linear-gradient(90deg, #1A2856 0%, #334EA9 100%);
 
   /* Grayscale */
   --white: #ffffff;
