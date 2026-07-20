@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { PrimaryButtonComponent } from './components/primary-button/primary-button.component';
 import { SecondaryButtonComponent } from './components/secondary-button/secondary-button.component';
+import { ItemCertificadoComponent } from "./components/item-certificado/item-certificado.component";
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,9 @@ import { SecondaryButtonComponent } from './components/secondary-button/secondar
     RouterOutlet,
     NavbarComponent,
     PrimaryButtonComponent,
-    SecondaryButtonComponent
-  ],
+    SecondaryButtonComponent,
+    ItemCertificadoComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

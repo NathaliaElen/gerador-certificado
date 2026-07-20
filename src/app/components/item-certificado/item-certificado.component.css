@@ -1,0 +1,11 @@
+.custom-card {
+  border: 1px solid var(--gray-100);
+}
+
+.nome-aluno {
+  color: var(--blue-dark);
+}
+
+.small-date {
+  color: var(--gray-200);
+}
