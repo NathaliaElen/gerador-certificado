@@ -4,6 +4,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { PrimaryButtonComponent } from './components/primary-button/primary-button.component';
 import { SecondaryButtonComponent } from './components/secondary-button/secondary-button.component';
 import { ItemCertificadoComponent } from "./components/item-certificado/item-certificado.component";
+import { BaseUiComponent } from "./components/base-ui/base-ui.component";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { ItemCertificadoComponent } from "./components/item-certificado/item-cer
     NavbarComponent,
     PrimaryButtonComponent,
     SecondaryButtonComponent,
-    ItemCertificadoComponent
+    ItemCertificadoComponent,
+    BaseUiComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
