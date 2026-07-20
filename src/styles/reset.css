@@ -5,7 +5,6 @@
 }
 
 html {
-  font-size: max(16px, 1em + 1vw);
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

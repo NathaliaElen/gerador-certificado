@@ -1,0 +1,26 @@
+.navbar {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.bg-icon {
+  color: var(--blue-base);
+}
+
+.nav-link {
+  color: var(--gray-200);
+}
+
+.nav-link.active {
+  color: var(--blue-base);
+}
+
+.active {
+  color: var(--blue-base);
+}
