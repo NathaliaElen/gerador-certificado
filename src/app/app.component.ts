@@ -6,6 +6,7 @@ import { SecondaryButtonComponent } from './components/secondary-button/secondar
 import { ItemCertificadoComponent } from "./components/item-certificado/item-certificado.component";
 import { BaseUiComponent } from "./components/base-ui/base-ui.component";
 import { CertificadosComponent } from './pages/certificados/certificados.component';
+import { CertificadoFormComponent } from './pages/certificado-form/certificado-form.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { CertificadosComponent } from './pages/certificados/certificados.compone
     RouterOutlet,
     NavbarComponent,
     BaseUiComponent,
-    CertificadosComponent
+    CertificadosComponent,
+    CertificadoFormComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

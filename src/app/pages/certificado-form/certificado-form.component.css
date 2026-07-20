@@ -1,0 +1,113 @@
+.custom-title {
+  color: var(--gray-300);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+  margin-bottom: 4px;
+}
+
+.custom-subtitle {
+  color: var(--gray-200);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.content-titles {
+  height: 60px;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.custom-card {
+  max-width: 672px;
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--blue-dark);
+  margin-bottom: 20px;
+}
+
+.custom-label {
+  color: var(--blue-dark);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.custom-input {
+  border: 1px solid var(--gray-100);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--gray-300);
+  font-size: 16px;
+}
+
+.custom-input:focus {
+  border: 1px solid var(--blue-base);
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.custom-input-group:has(input:focus) label {
+  color: var(--blue-base);
+}
+
+.atividade-group {
+  margin-bottom: 32px;
+}
+
+.item-list {
+  width: 100%;
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  padding: 16px;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-text {
+  color: var(--gray-300);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.remove-btn i {
+  padding: 5.75px;
+  color: var(--danger-base);
+  font-size: 12.5px;
+}
+
+.remove-btn:hover {
+  background-color: var(--gray-100);
+  padding: 2px;
+  border-radius: 4px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.item-list hr {
+  margin: 12px 0;
+  all: unset;
+  display: block;
+  height: 1px;
+  background-color: var(--gray-100);
+  /* margin: 12px 0; */
+}
