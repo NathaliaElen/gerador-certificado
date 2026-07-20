@@ -5,16 +5,15 @@ import { PrimaryButtonComponent } from './components/primary-button/primary-butt
 import { SecondaryButtonComponent } from './components/secondary-button/secondary-button.component';
 import { ItemCertificadoComponent } from "./components/item-certificado/item-certificado.component";
 import { BaseUiComponent } from "./components/base-ui/base-ui.component";
+import { CertificadosComponent } from './pages/certificados/certificados.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
     NavbarComponent,
-    PrimaryButtonComponent,
-    SecondaryButtonComponent,
-    ItemCertificadoComponent,
-    BaseUiComponent
+    BaseUiComponent,
+    CertificadosComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

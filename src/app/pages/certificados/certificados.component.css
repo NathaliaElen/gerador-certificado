@@ -1,0 +1,62 @@
+.custom-title {
+  color: var(--gray-300);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.custom-subtitle {
+  color: var(--gray-200);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.content-titles {
+  height: 60px;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.custom-card {
+  max-width: 672px;
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  height: 270px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 32px 56px 32px;
+}
+
+.custom-card i {
+  font-size: 48px;
+  color: var(--gray-200);
+}
+
+.custom-warning-titles {
+  gap: 2px;
+}
+
+.card-title {
+  color: var(--blue-dark);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.card-subtitle {
+  color: var(--gray-200);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.list-certificates {
+  max-width: 672px;
+}
