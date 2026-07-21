@@ -1,0 +1,124 @@
+.menu-certificado {
+  max-width: 800px;
+}
+
+.btn-voltar {
+  gap: 6px;
+  cursor: pointer;
+  color: var(--gray-200);
+}
+
+.btn-voltar p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.btn-voltar i {
+  font-size: 20px;
+}
+
+.certificado {
+  width: 800px;
+  height: 550px;
+  margin-top: 32px;
+  background-image: url('../../../../public/certificate/certificate_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+}
+
+.conteudo-certificado {
+  position: relative;
+  width: 720px;
+  height: 470px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.conteudo-certificado p {
+  margin: 0;
+}
+
+.assinatura-certificado {
+  position: absolute;
+  right: 40px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+}
+
+.icone-medalha {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+}
+
+.info-certificado {
+  width: 640px;
+  height: 300px;
+  margin: 64px 40px 48px 40px;
+  gap: 20px;
+}
+
+titulo-subtitulo-certificado h1 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 10%;
+  text-align: center;
+  color: var(--blue-dark);
+}
+
+.titulo-subtitulo-certificado p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.nome-aluno p {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 80px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--blue-base);
+}
+
+.lista-atividades {
+  width: 413.7px;
+}
+
+.lista-atividades p {
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.lista-atividades-titulo {
+  font-size: 12px;
+  margin-bottom: 8px !important;
+}
+
+.lista-descricao-atividades {
+  font-size: 14px;
+}
+
+.data-emissao {
+  font-weight: 700;
+  font-size: 11.2px;
+  line-height: 160%;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--gray-300);
+}

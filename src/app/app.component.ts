@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
 import { NavbarComponent } from "./components/navbar/navbar.component";
-import { PrimaryButtonComponent } from './components/primary-button/primary-button.component';
-import { SecondaryButtonComponent } from './components/secondary-button/secondary-button.component';
-import { ItemCertificadoComponent } from "./components/item-certificado/item-certificado.component";
 import { BaseUiComponent } from "./components/base-ui/base-ui.component";
-import { CertificadosComponent } from './pages/certificados/certificados.component';
-import { CertificadoFormComponent } from './pages/certificado-form/certificado-form.component';
+import { CertificadoComponent } from './pages/certificado/certificado.component';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +11,7 @@ import { CertificadoFormComponent } from './pages/certificado-form/certificado-f
     RouterOutlet,
     NavbarComponent,
     BaseUiComponent,
-    CertificadosComponent,
-    CertificadoFormComponent
+    CertificadoComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
