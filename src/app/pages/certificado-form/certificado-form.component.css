@@ -111,3 +111,21 @@
   background-color: var(--gray-100);
   /* margin: 12px 0; */
 }
+
+.error-message {
+  color: var(--danger-dark);
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.error-message p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.custom-input-group:has(.error-message) > label {
+  color: var(--danger-dark);
+}
