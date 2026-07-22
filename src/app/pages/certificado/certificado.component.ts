@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SecondaryButtonComponent } from "../../components/secondary-button/secondary-button.component";
+import { SecondaryButtonComponent } from '../../components/secondary-button/secondary-button.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
     RouterLink
   ],
   templateUrl: './certificado.component.html',
-  styleUrl: './certificado.component.css'
+  styleUrls: ['./certificado.component.css']
 })
 export class CertificadoComponent {
 
