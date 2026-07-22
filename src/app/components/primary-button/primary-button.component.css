@@ -5,6 +5,7 @@
   border: none;
   border-radius: 6px;
   font-size: 16px;
+  font-weight: 600;
   background: var(--blue-gradient);
   color: var(--white);
   cursor: pointer;

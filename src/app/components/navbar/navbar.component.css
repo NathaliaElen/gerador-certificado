@@ -2,6 +2,8 @@
   background-color: var(--white);
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--gray-100);
+  padding-right: 28px;
+  padding-left: 12px;
 }
 
 .navbar-logo img {
@@ -15,6 +17,8 @@
 
 .nav-link {
   color: var(--gray-200);
+  font-weight: 600;
+  padding: 6px !important;
 }
 
 .nav-link.active {
@@ -23,4 +27,13 @@
 
 .active {
   color: var(--blue-base);
+}
+
+.nav-item {
+  cursor: pointer;
+  margin-left: 18px !important;
+}
+
+.nav-item i {
+  font-size: 20px;
 }
