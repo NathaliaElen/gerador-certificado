@@ -1,4 +1,4 @@
-<div class="d-flex flex-column align-items-center">
+<form #form="ngForm" novalidate class="d-flex flex-column align-items-center">
 
   <div class="text-center mb-3 content-titles">
     <h1 class="fw-bold custom-title">Geração de certificado</h1>
@@ -8,21 +8,45 @@
   <div class="card custom-card w-100">
     <h2 class=" fw-bold card-title">Novo certificado</h2>
     <div class="mb-3 custom-input-group">
-      <label for="nomeCompleto" class="form-label custom-label">Nome completo</label>
-      <input [(ngModel)]="nomeCompleto" type="text" name="nomeCompleto" id="nomeCompleto" class="form-control custom-input" placeholder="Nome do aluno">
+      <label [ngClass]="campoInvalido(nomeRef) ?           'text-danger-label' : ''"
+       for="nomeCompleto" 
+       class="form-label custom-label">
+       Nome completo
+      </label>
+      <input #nomeRef="ngModel" maxlength="150" required [(ngModel)]="nomeCompleto"  type="text" name="nomeCompleto" id="nomeCompleto" class="form-control custom-input" placeholder="Nome do aluno">
 
-      <div class="error-message d-flex align-items-center">
-        <i class="ph ph-warning-circle"></i>
-        <p class="m-0">Error message</p>
-      </div>
+      @if (campoInvalido(nomeRef)) {
+        <div class="error-message d-flex align-items-center">
+            <i class="ph ph-warning-circle"></i>
+            <p class="m-0">O nome do aluno é obrigatório!</p>
+          </div>
+      }
     </div>
 
     <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
-        <label for="atividade" class="form-label custom-label">Atividade</label>
-        <input [(ngModel)]="atividade" type="text" name="atividade" id="atividade" class="form-control custom-input" placeholder="Atividade exercida">
+        <label [ngClass]="campoInvalido(atividadeRef) ?           'text-danger-label' : ''"
+        for="atividade" 
+        class="form-label custom-label">
+          Atividade
+        </label>
+
+        <input #atividadeRef="ngModel" maxlength="50" required [(ngModel)]="atividade" type="text" name="atividade" id="atividade" class="form-control custom-input" placeholder="Atividade exercida">
+
+        @if (campoInvalido(atividadeRef)) {
+        <div class="error-message d-flex align-items-center">
+          <i class="ph ph-warning-circle"></i>
+          <p class="m-0">O nome da atividade é obrigatório!</p>
+        </div>
+        }
       </div>
-      <app-secondary-button></app-secondary-button>
+
+      <app-secondary-button 
+        [ngStyle]="campoInvalido(atividadeRef) 
+          ? { 'margin-bottom': '24px' } 
+          : 
+          {}">
+      </app-secondary-button>
     </div>
 
     <div class="atividade-group">
@@ -48,4 +72,4 @@
     <app-primary-button></app-primary-button>
   </div>
 
-</div>
+</form>
