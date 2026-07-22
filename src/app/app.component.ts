@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { BaseUiComponent } from "./components/base-ui/base-ui.component";
-import { CertificadoComponent } from './pages/certificado/certificado.component';
 
 @Component({
   selector: 'app-root',
@@ -11,13 +10,10 @@ import { CertificadoComponent } from './pages/certificado/certificado.component'
     RouterOutlet,
     NavbarComponent,
     BaseUiComponent,
-    CertificadoComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'gerador-certificado';
-
-  exibeNavbar: boolean = true;
 }
