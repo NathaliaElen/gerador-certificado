@@ -9,7 +9,7 @@
     <h2 class=" fw-bold card-title">Novo certificado</h2>
     <div class="mb-3 custom-input-group">
       <label for="nomeCompleto" class="form-label custom-label">Nome completo</label>
-      <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control custom-input" placeholder="Nome do aluno">
+      <input [(ngModel)]="nomeCompleto" type="text" name="nomeCompleto" id="nomeCompleto" class="form-control custom-input" placeholder="Nome do aluno">
 
       <div class="error-message d-flex align-items-center">
         <i class="ph ph-warning-circle"></i>
@@ -20,7 +20,7 @@
     <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
         <label for="atividade" class="form-label custom-label">Atividade</label>
-        <input type="text" name="atividade" id="atividade" class="form-control custom-input" placeholder="Atividade exercida">
+        <input [(ngModel)]="atividade" type="text" name="atividade" id="atividade" class="form-control custom-input" placeholder="Atividade exercida">
       </div>
       <app-secondary-button></app-secondary-button>
     </div>
@@ -30,34 +30,17 @@
 
       <div class="card item-list w-100">
 
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
+        @for(atividade of atividades; track $index) {
+          <div class="item">
+            <span class="item-text">{{ atividade }}</span>
+            <div class="remove-btn">
+              <i class="ph-bold ph-x"></i>
+            </div>
           </div>
-        </div>
-        <hr>
-
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
-          </div>
-        </div>
-        <hr>
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
-          </div>
-        </div>
-        <hr>
-        <div class="item">
-          <span class="item-text">Configuração com Angular CLI</span>
-          <div class="remove-btn">
-            <i class="ph-bold ph-x"></i>
-          </div>
-        </div>
+          @if( $index < atividades.length - 1 ) {
+            <hr>
+          }
+        }
 
       </div>
     </div>
